@@ -16,11 +16,37 @@ print(b)
 print("la tupla tiene un tamaño de ", len(a))
 print("la lista tiene un tamaño de ", len(b))
 #Verificamos un elemento
-print(a[2] == "chocolate")
-print(b[-1] == "rojo")
+print('chocolate' in a)
+print('rojo' in a)
 #en la dupla es imposible modicar los elementos, por lo que será imposible eliminar o añadir elementos
 #Sin embargo, la lista no presenta este problema
 b.append("Amarillo")
 print(b)
 b[:2]=[]
 print(b)
+##################################
+numeros = {1,2,3,4}
+print(numeros, "pertence a ", type(numeros))
+diccionario = {'Nombre':'valentina','apellido':'villalobos','edad': 16,'año':2004,}
+print(diccionario, "pertence a ", type(diccionario))
+print(diccionario['apellido'])
+diccionario['edad']=17
+print(diccionario)
+#intento
+  
+#Tamaño del diccionario y del set
+print("el set tiene un tamaño de ",len(numeros), " elementos")
+print("el diccionario tiene un tamaño de ",len(diccionario), " elementos")
+#Busqueda
+print(1 in numeros)
+print('lugar' in diccionario)
+#Añadimos un elemento
+diccionario['lugar']="Madrid"
+numeros.add(5)
+print(diccionario)
+print(numeros)
+#Eliminamos elemento
+diccionario.pop('Nombre')
+print(diccionario)
+numeros.remove(3)
+print(numeros)
