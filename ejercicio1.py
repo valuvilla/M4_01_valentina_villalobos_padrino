@@ -20,7 +20,10 @@ print('chocolate' in a)
 print('rojo' in a)
 #en la dupla es imposible modicar los elementos, por lo que será imposible eliminar o añadir elementos
 #Sin embargo, la lista no presenta este problema
+#Anadimos elementos
 b.append("Amarillo")
 print(b)
-b[:2]=[]
+#Eliminamos elementos
+
+b.pop(2)
 print(b)
