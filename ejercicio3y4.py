@@ -17,7 +17,7 @@ def suma(n1):
     #Calculamos la media de los valores dados.
       return str(sumatorio/len(valor)) + " es la media de la lista de valores de la lista" +  str(valor)
     #Mostramos por pantalla ambos resultados  
-    print(sumatorio)
+    print(str(sumatorio)+ " es el sumatorio de " + str(valor))
     print(media(suma))
 
 #Para que se ejucte la función se hace uso de este comando  
